@@ -1,0 +1,5 @@
+/home/brook/RiderProjects/MoveDot/MoveDot/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/brook/RiderProjects/MoveDot/MoveDot/bin/Debug/MoveDot.exe.mdb
+/home/brook/RiderProjects/MoveDot/MoveDot/bin/Debug/MoveDot.exe
+/home/brook/RiderProjects/MoveDot/MoveDot/obj/Debug/MoveDot.exe
+/home/brook/RiderProjects/MoveDot/MoveDot/obj/Debug/MoveDot.exe.mdb
