@@ -5,7 +5,7 @@ using MoveDot.Model;
 
 namespace MoveDot.View
 {
-    public class SimpleView
+    public class SimpleView : IDotView
     {
         private Dot _dot;
         public SimpleView(Dot dot)
