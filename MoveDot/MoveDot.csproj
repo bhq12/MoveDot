@@ -41,14 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application.cs" />
+    <Compile Include="Controller\IDotController.cs" />
+    <Compile Include="Controller\KeyboardDotController.cs" />
     <Compile Include="Model\Coordinate.cs" />
     <Compile Include="Model\Dot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller" />
-    <Folder Include="View" />
+    <Compile Include="View\ConsoleDotView.cs" />
+    <Compile Include="View\IDotView.cs" />
+    <Compile Include="View\ScreenPaddingCalculator.cs" />
+    <Compile Include="View\SimpleDotView.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

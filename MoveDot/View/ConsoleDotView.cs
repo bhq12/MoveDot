@@ -7,30 +7,39 @@ namespace MoveDot.View
     public class ConsoleDotView : IDotView
     {
         private Dot _dot;
+        private StringBuilder _stringBuilder;
         
         public ConsoleDotView(Dot dot)
         {
             _dot = dot;
+            _stringBuilder = new StringBuilder();
         }
 
         public void Update()
         {
             var position = _dot.Position;
-            var width = Console.WindowWidth;
-            var height = Console.WindowHeight;
+            var screenWidth = Console.WindowWidth;
+            var screenHeight = Console.WindowHeight;
 
-            for (int i = 0; i < height; i++)
+            screenHeight--;//console has bottom row dedicated to the cursor
+
+            var screenPositionX = ScreenPaddingCalculator.GetScreenPadding(position.X, screenWidth);
+            
+            //x is left padded, whereas y is "top-padded", so we want screenheight - bottompadding
+            var screenPositionY = (screenHeight - 1) - ScreenPaddingCalculator.GetScreenPadding(position.Y, screenHeight);
+            
+            for (int i = 0; i < screenHeight; i++)
             {
-                if (i == position.Y % height)
+                if (i == screenPositionY)
                 {
-                    var line = new String(' ', position.X - 1) + "." + new String(' ', width - position.X);
-                    Console.WriteLine(line);
+                    var stringSize = screenPositionX + 1;
+                    Console.WriteLine(".".PadLeft(stringSize));
                 }
                 else
                 {
-                    Console.WriteLine(new String(' ', width));
+                    Console.WriteLine("");
                 }
-            }
+            }            
         }
     }
 }

@@ -1,0 +1,8 @@
+/home/brook/RiderProjects/MoveDot/Test/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/brook/RiderProjects/MoveDot/Test/bin/Debug/Test.dll.mdb
+/home/brook/RiderProjects/MoveDot/Test/bin/Debug/Test.dll
+/home/brook/RiderProjects/MoveDot/Test/bin/Debug/nunit.framework.dll
+/home/brook/RiderProjects/MoveDot/Test/bin/Debug/MoveDot.exe
+/home/brook/RiderProjects/MoveDot/Test/bin/Debug/MoveDot.exe.mdb
+/home/brook/RiderProjects/MoveDot/Test/obj/Debug/Test.dll
+/home/brook/RiderProjects/MoveDot/Test/obj/Debug/Test.dll.mdb

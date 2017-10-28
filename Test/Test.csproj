@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="TestDot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestScreenPaddingCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MoveDot\MoveDot.csproj">

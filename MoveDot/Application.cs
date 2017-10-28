@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using MoveDot.Controller;
 using MoveDot.Model;
 using MoveDot.View;
@@ -22,7 +23,6 @@ namespace MoveDot
 
         public void StartUp()
         {
-            _view.Update();
             _controller.Run();
         }
         
